@@ -16,25 +16,17 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/grpc/grpc-swift-2.git",
-            from: "2.0.0"
+            url: "https://github.com/grpc/grpc-swift.git",
+            from: "1.24.2"
         ),
         .package(
             url: "https://github.com/grpc/grpc-swift-nio-transport.git",
-            from: "2.0.0"
-        ),
-        .package(
-            url: "https://github.com/grpc/grpc-swift-protobuf.git",
-            from: "2.1.0"
+            from: "2.4.0"
         ),
         .package(
             url: "https://github.com/apple/swift-protobuf.git",
             from: "1.33.1"
         ),
-        .package(
-            url: "https://github.com/apple/swift-nio.git",
-            from: "2.0.0"
-        )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -42,11 +34,9 @@ let package = Package(
         .target(
             name: "CoreBluetoothMock_Dependencies",
             dependencies: [
-                .product(name: "GRPCCore", package: "grpc-swift-2"),
+                .product(name: "GRPC", package: "grpc-swift"),
                 .product(name: "GRPCNIOTransportHTTP2", package: "grpc-swift-nio-transport"),
-                .product(name: "GRPCProtobuf", package: "grpc-swift-protobuf"),
                 .product(name: "SwiftProtobuf", package: "swift-protobuf"),
-                .product(name: "NIO", package: "swift-nio"),
             ]),
         .testTarget(
             name: "CoreBluetoothMock_DependenciesTests",

@@ -2,7 +2,7 @@
 
 `CoreBluetoothMock_Dependencies` は、`CoreBluetoothMock.framework` が依存する Swift パッケージをまとめて管理するためのライブラリです。  
 `CoreBluetoothMock.framework` は [https://github.com/tochy0115/CoreBluetoothMock.git](https://github.com/tochy0115/CoreBluetoothMock.git) から入手できます。  
-このパッケージを Swift Package Manager (SPM) を通じて追加することで、CoreBluetoothMockはBLE Sim Linkerを経由してMac OSのCoreBluetoothを利用したBLE通信ができるようになります。
+このパッケージを Swift Package Manager (SPM) を通じて追加することで、CoreBluetoothMockはCB Interaction Viewerを経由してMac OSのCoreBluetoothを利用したBLE通信ができるようになります。
 
 ## 目的
 
@@ -14,7 +14,7 @@
 
 - Xcode 26.2 以降 (Swift / Objective-c)
 - iOS シミュレータ (実機では CoreBluetooth を使用してください)
-- Mac OS 上で **BLE Sim Linker** を起動しておく必要があります（シミュレータ起動前に必須）
+- Mac OS 上で **CB Interaction Viewer** を起動しておく必要があります（シミュレータ起動前に必須）
 
 ## 導入方法
 
@@ -52,7 +52,7 @@
    #endif
    ```
 
-4. シミュレータを起動する前に Mac 上で **BLE Sim Linker** を必ず起動しておく
+4. シミュレータを起動する前に Mac 上で **CB Interaction Viewer** を必ず起動しておく
 
 これで CoreBluetoothMock の API を通じて、シミュレータ上で Bluetooth の動作をモックしてテスト可能です。
 
@@ -61,7 +61,7 @@
 - 実機での Bluetooth 通信テストには CoreBluetooth.framework を使用してください。
 - シミュレータ用の Mock であり、実機の挙動を完全に再現するものではありません。
 - CoreBluetoothMock 内の API は CoreBluetooth と同等の形を意識して作られていますが、一部動作は簡略化されています。
-- BLE Sim Linker を起動していない状態でシミュレータを起動すると、Bluetooth モックが正しく動作しません。
+- CB Interaction Viewer を起動していない状態でシミュレータを起動すると、Bluetooth モックが正しく動作しません。
 
 ## ライセンス
 

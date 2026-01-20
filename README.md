@@ -2,7 +2,7 @@
 
 `CoreBluetoothMock_Dependencies` is a Swift package that manages all the dependencies required by `CoreBluetoothMock.framework`.  
 You can obtain `CoreBluetoothMock.framework` from [https://github.com/tochy0115/CoreBluetoothMock.git](https://github.com/tochy0115/CoreBluetoothMock.git).  
-By adding this package through Swift Package Manager (SPM), CoreBluetoothMock can perform BLE communication on the iOS simulator via **BLE Sim Linker**, using macOS CoreBluetooth.
+By adding this package through Swift Package Manager (SPM), CoreBluetoothMock can perform BLE communication on the iOS simulator via **CB Interaction Viewer**, using macOS CoreBluetooth.
 
 ## Purpose
 
@@ -14,7 +14,7 @@ By adding this package through Swift Package Manager (SPM), CoreBluetoothMock ca
 
 - Xcode 26.2 or later (Swift / Objective-C)
 - iOS Simulator (use CoreBluetooth on real devices)
-- **BLE Sim Linker** must be running on macOS before launching the simulator.
+- **CB Interaction Viewer** must be running on macOS before launching the simulator.
 
 ## Installation
 
@@ -51,7 +51,7 @@ By adding this package through Swift Package Manager (SPM), CoreBluetoothMock ca
    #endif
    ```
 
-4. Make sure **BLE Sim Linker** is running on macOS before starting the simulator.
+4. Make sure **CB Interaction Viewer** is running on macOS before starting the simulator.
 
 This setup allows you to test Bluetooth functionality on the simulator using CoreBluetoothMock API.
 
@@ -60,7 +60,7 @@ This setup allows you to test Bluetooth functionality on the simulator using Cor
 - Use CoreBluetooth.framework for testing Bluetooth functionality on real devices.
 - The simulator mock does not fully replicate the behavior of real devices.
 - CoreBluetoothMock API is designed to match CoreBluetooth as closely as possible, but some behaviors are simplified.
-- If BLE Sim Linker is not running, the Bluetooth mock will not function correctly in the simulator.
+- If CB Interaction Viewer is not running, the Bluetooth mock will not function correctly in the simulator.
 
 ## License
 

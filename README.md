@@ -7,7 +7,3 @@ Please use the main `CoreBluetoothMock` repository instead:
 
 - https://github.com/tochy0115/CoreBluetoothMock.git
 
-## License
-
-Apache License 2.0
-

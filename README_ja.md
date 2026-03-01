@@ -7,6 +7,3 @@
 
 - https://github.com/tochy0115/CoreBluetoothMock.git
 
-## ライセンス
-
-Apache License 2.0
